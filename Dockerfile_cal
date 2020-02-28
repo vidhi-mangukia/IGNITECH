@@ -1,0 +1,18 @@
+FROM centos:7
+
+COPY calculator.c .
+
+RUN yum install -y gcc
+
+RUN gcc calculator.c 
+
+ADD a.out /
+
+RUN chmod 777 /a.out
+
+#ENTRYPOINT ["./a.out"]
+
+SHELL ["./a.out","1","1","1"]
+
+
+
