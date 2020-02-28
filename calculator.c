@@ -3,8 +3,8 @@ void main()
 {
 	int a,b,var;
 	printf("Enter the two numbers: \n");
-	scanf("%d,%d",&a,&b);
-        printf("HI");
+	scanf("%d %d",&a,&b);
+	printf("hi");
 	printf("\n Enter your choice \
 		\n 1.Addition");
 	printf("\n Enter the choice now:");
